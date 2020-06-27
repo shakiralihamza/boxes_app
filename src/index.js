@@ -69,13 +69,17 @@ function CanItHold({width1, height1, width2, height2}) {
     let result;
     let big_box = 0;
     if (width1 > 0 && width2 > 0 && height1 > 0 && height2 > 0) {
-        if((height1 > height2) && (width1 > width2)) {
-            result = "Box 1 can hold box 2, as shown below: ";
-            big_box = 1;
+        if((height1 > height2)) {
+            if ((width1 > width2)) {
+                result = "Box 1 can hold box 2, as shown below: ";
+                big_box = 1;
+            }
         }
-        else if((height1 < height2) && (width1 < width2)) {
-            result = "Box 2 can hold box 1, as shown below:";
-            big_box = 2;
+        else if((height1 < height2)) {
+            if ((width1 < width2)) {
+                result = "Box 2 can hold box 1, as shown below:";
+                big_box = 2;
+            }
         }
         else {
             result = "Neither of the boxes can hold the other.";
