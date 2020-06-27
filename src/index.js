@@ -70,7 +70,7 @@ function CanItHold({width1, height1, width2, height2}) {
     let big_box = 0;
     if (width1 > 0 && width2 > 0 && height1 > 0 && height2 > 0) {
         if((height1 > height2) && (width1 > width2)) {
-            result = "Box 1 can hold box 2, as shown below:";
+            result = "Box 1 can hold box 2, as shown below: ";
             big_box = 1;
         }
         else if((height1 < height2) && (width1 < width2)) {
