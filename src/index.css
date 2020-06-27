@@ -4,10 +4,12 @@
 }
 body {
     padding: 20px;
+    background-color: rgba(255, 225, 225, 0.51);
 }
 .box1_input {
     border: 2px solid red;
     border-radius: 10px;
+    background: none;
     height: 30px;
     margin: 20px;
     padding: 5px;
@@ -15,6 +17,7 @@ body {
 .box2_input {
     border: 2px solid blueviolet;
     border-radius: 10px;
+    background: none;
     height: 30px;
     margin: 20px;
     padding: 5px;
