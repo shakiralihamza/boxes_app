@@ -114,7 +114,7 @@ function CanItHold({width1, height1, width2, height2}) {
     }
     return (
         <>
-            {width1&&width2?<p>Now, the question is, can one box hold another?</p>:''}
+            {width1&&width2?<p>Now, the question is, can one box hold the other?</p>:''}
             {width1&&width2?<p>Let's calculate:</p>:''}
             <br/>
             {result}
